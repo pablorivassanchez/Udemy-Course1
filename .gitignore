@@ -1,0 +1,16 @@
+DattingApp.API/obj
+DattingApp.API/bin
+DattingApp.API/obj/Debug/netcoreapp2.1/DattingApp.API.dll
+DattingApp.API/bin/Debug/netcoreapp2.1/DattingApp.API.dll
+DattingApp.API/bin/Debug/netcoreapp2.1/DattingApp.API.pdb
+DattingApp.API/bin/Debug/netcoreapp2.1/DattingApp.API.deps.json
+DattingApp.API/bin/Debug/netcoreapp2.1/DattingApp.API.runtimeconfig.dev.json
+DattingApp.API/obj/DattingApp.API.csproj.nuget.cache
+DattingApp.API/obj/DattingApp.API.csproj.nuget.g.props
+DattingApp.API/obj/DattingApp.API.csproj.nuget.g.targets
+DattingApp.API/obj/project.assets.json
+DattingApp.API/obj/Debug/netcoreapp2.1/DattingApp.API.pdb
+DattingApp.API/obj/Debug/netcoreapp2.1/DattingApp.API.assets.cache
+DattingApp.API/obj/Debug/netcoreapp2.1/DattingApp.API.csproj.CoreCompileInputs.cache
+DattingApp.API/obj/Debug/netcoreapp2.1/DattingApp.API.csproj.FileListAbsolute.txt
+DattingApp.API/obj/Debug/netcoreapp2.1/DattingApp.API.csprojAssemblyReference.cache
