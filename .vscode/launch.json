@@ -5,6 +5,21 @@
    "version": "0.2.0",
    "configurations": [
         {
+            "name": ".NET Core Launch (api)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/DattingApp.API/bin/Debug/netcoreapp2.1/DattingApp.API.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/DattingApp.API",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        {
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
@@ -40,7 +55,7 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach",
-            "processId": "${command:pickProcess}"
+            "processId": "${command:pickProcess}",
         }
     ,]
 }

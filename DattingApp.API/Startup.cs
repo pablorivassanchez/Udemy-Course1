@@ -31,6 +31,7 @@ namespace DattingApp.API
             services.AddDbContext<DataContext>(x=>x.UseSqlite(connectionString));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddCors();
+            services.AddScoped<IAuthRepository, AuthRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,7 +45,7 @@ namespace DattingApp.API
             {
                 // app.UseHsts();
             }
-            app.UseCors(x=>x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseCors(x=>x.AllowAnyOrigin().AllowAnyMethod().AllowCredentials().AllowAnyHeader());
             // app.UseHttpsRedirection();
             app.UseMvc();
         }
