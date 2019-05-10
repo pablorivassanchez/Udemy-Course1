@@ -17,10 +17,10 @@ namespace DattingApp.API.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthRepository _repo;
-        private readonly IConfiguration config;
+        private readonly IConfiguration _config;
         public AuthController(IAuthRepository repo, IConfiguration config)
         {
-            this.config = config;
+            this._config = config;
             _repo = repo;
 
         }
@@ -62,14 +62,14 @@ namespace DattingApp.API.Controllers
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8
-                .GetBytes(config.GetSection("AppSettings:Token").Value));
+                .GetBytes(_config.GetSection("AppSettings:Token").Value));
 
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+            var creeds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
             var tokenDescriptor = new SecurityTokenDescriptor{
                 Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.Now.AddDays(1),
-                SigningCredentials = creds
+                SigningCredentials = creeds
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();
